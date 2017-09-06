@@ -1,0 +1,183 @@
+body {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    background-size: cover, 100%;
+    font-family: "Montserrat", serif;
+}
+
+body > * {
+    font-size: 1rem;
+}
+
+header {
+    /* If you change the height, remember to change #container margin */
+    text-align: center;
+    height: 70px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 0 rgba(211,211,211,.9);
+    box-shadow: 0 1px 0 0 rgba(211,211,211,.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header h4 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+/*li {*/
+    /*list-style: none;*/
+/*}*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+
+h1 {
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    padding: 1%;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h2, #footer-container {
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    width: 100%;
+}
+
+#footer-container {
+    min-width: 300px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#container {
+    min-width: 300px;
+    width: 98%;
+    max-width: 1000px;
+    /* The 90px is the height of the header (80px) + 10px */
+    margin: 90px auto 0 auto;
+}
+
+.attributions {
+    margin: 0 5px 10px 0;
+}
+
+.article-title {
+    margin: 0;
+    padding: 0;
+    /* h4 text */
+    font-size: 1.3rem;
+}
+
+.article-item {
+    /* div item (entire thing) */
+    margin: 30px 10px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.article-description {
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    color: rgb(128,128,128);
+    font-size: 1.1rem;
+}
+
+.article-item img {
+    width: 300px;
+    height: auto;
+}
+
+.article-image-div {
+    margin-right: 10px;
+}
+
+#api_attr {
+    width:300px;
+    vertical-align:top;
+    font-family: Arial, serif;
+    font-size:9pt;
+    line-height: normal;
+}
+
+#api_license {
+    float:left;
+    padding-right:2px
+}
+
+#app_shot {
+    display: block;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+p, li {
+    font-size: 1.3rem;
+    color: rgb(64,64,64);
+}
+
+p.sentence {
+    /*color: black;*/
+    /*font-size: 1.3rem;*/
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+.red {
+    color: red;
+}
+
+p:last-child {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 750px) {
+    #footer-container, .article-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attributions {
+        text-align: center;
+    }
+    #app_shot {
+        display: block;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+    }
+}
